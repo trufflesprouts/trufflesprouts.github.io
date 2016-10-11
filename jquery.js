@@ -16,7 +16,7 @@ $(function () {
             });
         },
         error: function() {
-            alert('error fetching date');
+            alert('error fetching date' + error);
         }
         
     });
