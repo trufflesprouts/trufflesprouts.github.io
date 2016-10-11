@@ -1,23 +1,32 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AJAX Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-  <h1 class="page-heading">Posts</h1>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery.js"></script>
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
+    <div id="title">
+        <h1>Friends List</h1>
+    </div>
+    <div id="friends">
+        <ul id="friendsList"></ul>
+        <div>
+            <p>Name: <input type="text" id="name"></p>
+            <p>Age: <input type="text" id="age"></p>
+            <button id="add-friend">Add Friend</button>
+        </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
