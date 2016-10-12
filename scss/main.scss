@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+body {
+    transition: all 1s ease-in-out;
+}
+
+.wait {
+    margin: 160px auto;
+    width: 40px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.card {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    height: 250px;
+    width: 700px;
+    display: flex;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 5px pink;
+    };
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        background-color: yellow;
+        height: 250px;
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+
+
+.right {
+    position: relative;
+    width: 40%;
+    text-align: center;
+}
+
+.left {
+    margin-left: -20px;
+    position: relative;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .textBottomLeft {
+        position: absolute;
+        bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .textBottomRight {
+        position: absolute;
+        bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+@media screen and (max-width: 500px) {
+    .card {
+        position: relative;
+        height: 425px;
+    }
+    .right {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        margin: 250px auto;
+    }
+    .textBottomLeft {
+        margin-top:70px;
+        position: relative;
+    }
+
+    .textBottomRight {
+        position: relative;
+    }
+}
+
+
+.cityName {
+    margin-top: -20px;
+}
+
+h1 {
+    font-family: "Karla";
+    font-size: 3em;
+}
+
+p {
+    font-family: "Karla";
+}
+
+i {
+    font-size: 100px;
+    margin-top: 60px;
+}
