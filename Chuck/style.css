@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Vidaloka');
+
+body {
+    background-color: ;
+}
+
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 100vh;
+}
+
+#QuoteCard  {
+    background-color: darkorange;
+    padding: 5%;
+    border: 0;
+    transition: outline-width 0.35s ease-in-out;
+}
+
+#QuoteCard p {
+    font-family: Vidaloka;
+    font-size: 3em;
+    color: white;
+}
+
+
+#QuoteCard:hover {
+    cursor:pointer;
+    outline-color: yellow;
+    outline-width: 8px;
+    outline-style: solid;
+}
+
+a {
+    font-family: Vidaloka;
+    font-size: 2em;
+    color: deepskyblue;
+    clear: both;
+    float: right;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor:pointer;
+    text-decoration: none;
+}
