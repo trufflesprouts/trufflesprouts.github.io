@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Allerta');
+
+/*   H E A D E R   */
+
+header .row {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header p {
+    margin: 0;
+    color: gray;
+}
+
+nav div {
+    padding: 40px;
+}
+
+div {
+    transition: .35s;
+}
+
+.changeBackgroundNav {
+    background-color: #F4F4F4 !important;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none !important;
+}
+
+
+/*   A B O U T   */
+
+#about {
+    text-align: left;
+}
+
+#about .row {
+    margin-top: 160px;
+}
+
+#about h1 {
+    color: black;
+    font-family: "Catamaran";
+    font-weight: 700;
+    font-size: 4em;
+}
+
+#about h2 {
+    font-family: "Catamaran";
+    font-weight: 100;
+    font-size: 1.3em;
+    line-height: 150%;
+    margin-bottom: 100px;
+}
+
+#about img {
+    margin: auto;
+    max-height: 300px;
+    margin-bottom: 500px;
+}
+
+#about p {
+    font-family: "Catamaran";
+    font-weight: 100;
+    font-size: 1.4em;
+    line-height: 200%;
+    margin-top: -400px;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: black;
+    background: yellow;
+}
+
+span.highlight-yellow {
+    background: yellow;
+    color: black;
+    box-shadow: 5px 0 0 yellow, -5px 0 0 yellow;
+    padding: 0px 0;
+    margin: 5px;
+}
+
+
+/*   F I L M S   */
+
+#films {
+    background-color: black;
+}
+
+.film {
+    height: 100vh;
+}
+
+#pulp {
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/05/16/16/pulp-fiction.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#kill {
+    background-image: url("http://cdn.playbuzz.com/cdn/02ee4bb5-6aa8-44af-bc32-14db1e37a21a/bbe7ba01-75e7-4dfb-9f89-3ec037579610.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#hateful {
+    background-image: url("https://cdn0.vox-cdn.com/thumbor/56lnEq5psvm9IuxIIDMrMzyxCR0=/cdn0.vox-cdn.com/uploads/chorus_asset/file/4333413/hateful-8-the-6-rcm0x1920u.0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#django {
+    background-image: url("http://cinema-scope.com/wp-content/uploads/2013/03/django-unchained-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#basterds {
+    background-image: url("https://images.alphacoders.com/227/227571.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#dogs {
+    background-image: url("http://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/28/2012/04/resdogs.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.film {
+    transition: .5s;
+}
+
+.filmtitle {
+    position: relative;
+    font-family: "Karla";
+    font-size: 6em;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 70vh;
+}
+
+.darkenFilm {
+    opacity: 0.3;
+}
+
+
+/*   P R E SS   */
+
+#press {
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#press h1 {
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #e6e6e6;
+}
+
+.cardarea {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    height: 400px;
+    text-align: center;
+    padding: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    font-family: Georgia, serif;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#vanity {
+    color: #4d4d4d;
+    background-color: #f7f7f7;
+}
+
+#vanity img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#telegraph {
+    color: #4d4d4d;
+    background-color: #f7f7f7;
+}
+
+#telegraph img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#nytimes {
+    color: #4d4d4d;
+    background-color: #f7f7f7;
+}
+
+#nytimes img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#nymag {
+    color: white;
+    background-color: #000000;
+}
+
+#nymag img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#rollingstones {
+    color: white;
+    background-color: #ED2324;
+}
+
+#rollingstones img {
+    margin-bottom: 20px;
+}
+
+.changeBorderCard {
+    outline: 5px solid red;
+}
+
+
+/*   C O N T A C T   */
+
+#contact {
+    margin-top: 100px;
+    align-items: center;
+    color: #4d4d4d;
+    padding: 50px;
+    background: #f1f1f1;
+}
+
+#contact h1 {
+    font-size: 5em;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+form {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', sans-serif;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+    resize: none;
+}
+
+#input-submit {
+    color: white;
+    background: #8c8c8c;
+    cursor: pointer;
+}
+
+#input-submit:hover {
+    color: white;
+    background: #e74c3c;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 50px;
+}
+
+.icons img {
+    margin: auto;
+    height: 125px;
+    width: auto;
+    padding: 15px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+#twitter:hover {
+    background: #11C1FF;
+}
+
+#instagram:hover {
+    background: #C2019A;
+}
+
+#linkedin:hover {
+    background: #0274B3;
+}
+
+#vimeo:hover {
+    background: #23B6EA;
+}
