@@ -59,10 +59,13 @@ Input {
     height: 50px;
     padding: 10px 30px;
     box-sizing: border-box;
-    outline-width: 0;
+    outline: none;
+    border-radius: 0;
     border: 1px solid lightgray;
     &:focus {
-        outline-width: 0;
+        outline: none;
+        border-radius: 0;
+        border: 1px solid lightgray;
     }
 }
 
