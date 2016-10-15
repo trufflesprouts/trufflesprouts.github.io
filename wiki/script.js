@@ -20,9 +20,8 @@ $(function () {
             clearTimeout(typingTimer);
         }
     });
-    
-    $($input).submit(function(){
-      getSearchResults();
+    $("form").submit(function(){
+        getSearchResults();
     });
 });
 
