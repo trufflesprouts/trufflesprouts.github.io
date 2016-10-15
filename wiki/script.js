@@ -20,7 +20,8 @@ $(function () {
             clearTimeout(typingTimer);
         }
     });
-    $("form").submit(function(){
+    $("form").submit(function(e){
+        e.preventDefault();
         getSearchResults();
     });
 });
