@@ -48,8 +48,10 @@ Input {
   box-sizing: border-box;
   outline: none;
   border-radius: 0;
-  border: 1px solid lightgray; }
+  border: 1px solid lightgray;
+  -webkit-appearance: none; }
   Input:focus {
+    -webkit-appearance: none;
     outline: none;
     border-radius: 0;
     border: 1px solid lightgray; }
