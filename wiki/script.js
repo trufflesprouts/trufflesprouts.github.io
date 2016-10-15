@@ -20,6 +20,10 @@ $(function () {
             clearTimeout(typingTimer);
         }
     });
+    
+    $($input).submit(function(){
+      getSearchResults();
+    });
 });
 
 function getSearchResults() {
