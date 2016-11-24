@@ -32,6 +32,11 @@ for (var i = 0; i < calcBtnELs.length; i++) {
 			if (operation == "√") {
 				screenEl.textContent = Math.sqrt(screenEl.textContent);
 				calculations = calculations.replace(/([\/\+\-\*])[0-9]*$|^[0-9]*$/, "$1" + screenEl.textContent);
+        if (screenEl.textContent.length > 16) {
+					var currNum = Number(screenEl.textContent);
+					screenEl.textContent = currNum.toPrecision(10);
+					calculations = screenEl.textContent;
+				}
 			}
 			// Stop taking input if there isn't enough space on screen
 			if ((/[0-9]/.test(operation) || operation == ".") && (screenEl.textContent.length > 15 || calculations.length > 24)) {
