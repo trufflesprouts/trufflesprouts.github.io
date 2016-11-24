@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Calculator</title>
   <meta name="description" content="A simple JS calculator">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -29,33 +29,33 @@
         </div>
       </div>
       <div class="row">
-        <div class="calc-btn" operation="AC"><p>AC</p></div>
-        <div class="calc-btn" operation="CE"><p>CE</p></div>
-        <div class="calc-btn" operation="√"><p>√</p></div>
-        <div class="calc-btn" operation="/"><p>÷</p></div>
+        <div class="calc-btn" operation="AC" ontouchend="this.onclick=fix"><p>AC</p></div>
+        <div class="calc-btn" operation="CE" ontouchend="this.onclick=fix"><p>CE</p></div>
+        <div class="calc-btn" operation="√" ontouchend="this.onclick=fix"><p>√</p></div>
+        <div class="calc-btn" operation="/" ontouchend="this.onclick=fix"><p>÷</p></div>
       </div>
       <div class="row">
-        <div class="calc-btn" operation="7"><p>7</p></div>
-        <div class="calc-btn" operation="8"><p>8</p></div>
-        <div class="calc-btn" operation="9"><p>9</p></div>
-        <div class="calc-btn" operation="*"><p>x</p></div>
+        <div class="calc-btn" operation="7" ontouchend="this.onclick=fix"><p>7</p></div>
+        <div class="calc-btn" operation="8" ontouchend="this.onclick=fix"><p>8</p></div>
+        <div class="calc-btn" operation="9" ontouchend="this.onclick=fix"><p>9</p></div>
+        <div class="calc-btn" operation="*" ontouchend="this.onclick=fix"><p>x</p></div>
       </div>
       <div class="row">
-        <div class="calc-btn" operation="4"><p>4</p></div>
-        <div class="calc-btn" operation="5"><p>5</p></div>
-        <div class="calc-btn" operation="6"><p>6</p></div>
-        <div class="calc-btn" operation="-"><p>-</p></div>
+        <div class="calc-btn" operation="4" ontouchend="this.onclick=fix"><p>4</p></div>
+        <div class="calc-btn" operation="5" ontouchend="this.onclick=fix"><p>5</p></div>
+        <div class="calc-btn" operation="6" ontouchend="this.onclick=fix"><p>6</p></div>
+        <div class="calc-btn" operation="-" ontouchend="this.onclick=fix"><p>-</p></div>
       </div>
       <div class="row">
-        <div class="calc-btn" operation="1"><p>1</p></div>
-        <div class="calc-btn" operation="2"><p>2</p></div>
-        <div class="calc-btn" operation="3"><p>3</p></div>
-        <div class="calc-btn" operation="+"><p>+</p></div>
+        <div class="calc-btn" operation="1" ontouchend="this.onclick=fix"><p>1</p></div>
+        <div class="calc-btn" operation="2" ontouchend="this.onclick=fix"><p>2</p></div>
+        <div class="calc-btn" operation="3" ontouchend="this.onclick=fix"><p>3</p></div>
+        <div class="calc-btn" operation="+" ontouchend="this.onclick=fix"><p>+</p></div>
       </div>
       <div class="row">
-        <div class="calc-btn" style="width: 50% !important;" operation="0"><p>0</p></div>
-        <div class="calc-btn" operation="."><p>.</p></div>
-        <div class="calc-btn" operation="="><p>=</p></div>
+        <div class="calc-btn" style="width: 50% !important;" operation="0" ontouchend="this.onclick=fix"><p>0</p></div>
+        <div class="calc-btn" operation="." ontouchend="this.onclick=fix"><p>.</p></div>
+        <div class="calc-btn" operation="=" ontouchend="this.onclick=fix"><p>=</p></div>
       </div>
     </div>
   </div>
