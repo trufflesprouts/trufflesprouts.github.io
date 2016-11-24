@@ -10,13 +10,19 @@ p {
 
 .calculator {
   position: relative;
-  margin: 100px auto;
+  margin: 40px auto;
   width: 300px;
   height: 448px;
   border: 1px solid $borderGrey;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+@media screen and (min-width: 500px) {
+  .calculator {
+    margin: 100px auto;
+  }
 }
 
 .calc-screen {
