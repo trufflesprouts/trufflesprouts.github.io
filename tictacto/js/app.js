@@ -206,9 +206,11 @@ var xoxo = {
 	declareWinner: function (winner) {
 		xoxo.revealPrompt();
 		if (winner === "tie") {
-			xoxo.userPrompt[0].innerHTML = '<h1>It\' a <span class="winnerSymb">tie!</span></h1>';
+			xoxo.userPrompt[0].innerHTML = '<h1>It\'s A <span class="winnerSymb">Tie!</span></h1>';
+		} else if (winner == xoxo.userChoice) {
+			xoxo.userPrompt[0].innerHTML = '<h1>You <span class="winnerSymb">Won!</span></h1>';
 		} else {
-			xoxo.userPrompt[0].innerHTML = '<h1><span class="winnerSymb">'+winner+'</span> Is the winner!</h1>';
+			xoxo.userPrompt[0].innerHTML = '<h1>You <span class="winnerSymb">Lost!</span></h1>';
 		}
 		xoxo.userPrompt[0].innerHTML += '<h1 class="restartBtn">Play Again?</h1>';
 		xoxo.restartBtn = this.userPrompt.find('.restartBtn');
