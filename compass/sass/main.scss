@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,400,700");
+
+@import 'vendors/normalize.min';
+
+$morningDark: #7BCADC;
+$morningLight: #ACE8F2;
+$morningGrass: #78C4D7;
+$eveningDark: #F4955F;
+$eveningLight: #FAE493;
+$eveningGrass: #FF9243;
+$nightDark: #384354;
+$nightLight: #727B8A;
+$nightGrass: #6E7786;;
+
+.unsupported-msg {
+  font-family: "Roboto";
+  margin-top: 150px;
+  text-align: center;
+}
+
+.outer-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.morning {background: -webkit-linear-gradient(top, $morningLight 0%,$morningDark 100%);background: linear-gradient(to bottom, $morningLight 0%,$morningDark 100%);}
+
+.evening {background: -webkit-linear-gradient(top, $eveningLight 0%,$eveningDark 100%);background: linear-gradient(to bottom, $eveningLight 0%,$eveningDark 100%);}
+
+.night {background: -webkit-linear-gradient(top, $nightLight 0%,$nightDark 100%);background: linear-gradient(to bottom, $nightLight 0%,$nightDark 100%);}
+
+.morning-grass {background-image: url(../images/grass-noise.png);background-color: $morningGrass;background-blend-mode: screen;}
+
+.evening-grass {background-image: url(../images/grass-noise.png);background-color: $eveningGrass;background-blend-mode: screen;}
+
+.night-grass {opacity: 0.5;background-image: url(../images/grass-noise.png);background-color: $nightGrass;background-blend-mode: screen;}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.center-absolute {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.center-text {
+  text-align: center;
+}
+
+p, h2 {
+  font-family: "Roboto";
+  font-weight: 200;
+  color: white;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/noise.png);
+}
+
+.compass {
+  position: relative;
+  // margin-top: 20%;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -webkit-box-pack: center;
+  //     -ms-flex-pack: center;
+  //         justify-content: center;
+  // -webkit-box-align: center;
+  //     -ms-flex-align: center;
+  //         align-items: center;
+  margin: 70px auto;
+  height: 283px;
+  width: 283px;
+}
+
+.compass-0 {
+  position: absolute;
+  width: 283px;
+  height: 283px;
+}
+
+.compass-needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(10deg);
+}
+
+.time {
+  position: absolute;
+  bottom: 60px;
+}
+
+.compass-needle {
+  -webkit-filter: drop-shadow( 0 0 20px rgba(0, 0, 0, 0.15) );
+  filter: drop-shadow( 0 0 20px rgba(0, 0, 0, 0.15) );
+}
+
+.environment-0 {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+}
+
+.environment-1 {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.environment-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.environment-3 {
+  position: absolute;
+  bottom: 25px;
+}
