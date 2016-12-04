@@ -51,10 +51,10 @@ var compass = (function() {
 	changeEnviroment();
 
 	if (window.DeviceOrientationEvent) {
-		// if (typeof window.orientation == 'undefined') {
-		// 	document.body.innerHTML = "<h1 class='unsupported-msg'>Sorry, your device doesn't have a magnetometer.</h1>";
-		// 	return;
-		// };
+		if (typeof window.orientation == 'undefined') {
+			document.body.innerHTML = "<h1 class='unsupported-msg'>Sorry, your device doesn't have a magnetometer.</h1>";
+			return;
+		};
 	  // Listen for the deviceorientation event and handle the raw data
 	  window.addEventListener('deviceorientationabsolute', function(eventData) {
 			var yAxis = eventData.gamma;
