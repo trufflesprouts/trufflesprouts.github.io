@@ -29,6 +29,7 @@ td {
   #tagline {
     position: absolute;
     top: 20vh;
+    bottom: auto;
     right: 50%;
     transform: translateX(50%);
     color: rgb(150, 150, 150);
