@@ -91,12 +91,12 @@ $(document).ready(function () {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors);
         } else {
-            alert('Device probably not ready.');
+            $(".wait").html('Device probably not ready.');
         }
     });
 
     function handle_errors(error) {
-        alert("Problem Fetching Location");
+      $(".wait").html('Problem Fetching Location.');
     };
 
     function handle_geolocation_query(position) {
