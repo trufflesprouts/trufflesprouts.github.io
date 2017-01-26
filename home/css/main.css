@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+
+* {
+  font-family: "Roboto Mono", monospace;;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+#tagline {
+  position: absolute;
+  bottom: 100px;
+  right: 10%;
+  color: rgb(150, 150, 150);
+}
+
+table {
+  margin: 150px auto;
+}
+
+td {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+  #tagline {
+    position: absolute;
+    top: 20vh;
+    right: 50%;
+    transform: translateX(50%);
+    color: rgb(150, 150, 150);
+  }
+
+  table {
+    margin: 50vh auto;
+    transform: translateY(-75px);
+  }
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+    /*border: 1px solid green;*/
+	}
+
+	td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    overflow: hidden;
+	}
+}
+
+.link {
+  color: #0000EE;
+  position: relative;
+  z-index: 2;
+}
+
+td a:first-child {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(50%) translateY(50%);
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  z-index: 1;
+  height: 200px;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(50%) translateY(50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.hover {
+  color: white;
+}
