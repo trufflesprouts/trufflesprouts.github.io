@@ -3,6 +3,7 @@ var Guitar = {
 		this.pointerHeld = false;
 		this.cacheDom();
 		this.bindEvents();
+    this.downloadAudio();
 	},
 	cacheDom: function () {
     this.aether = document.getElementById('aether');
@@ -51,10 +52,18 @@ var Guitar = {
       guitarString.className = "guitar-string";
     }, 2000);
 	},
+  downloadAudio: function () {
+    this.sounds = {};
+    var notes = ["A","B","C","D","E","F"];
+    for (var i = 0; i < notes.length; i++) {
+      this.sounds[notes[i] + 0] = new Audio('./sounds/'+notes[i]+0+'.mp3');
+      this.sounds[notes[i] + 1] = new Audio('./sounds/'+notes[i]+1+'.mp3');
+    }
+  },
 	playNote: function (note) {
     randomNoteNum = Math.floor(Math.random() *2);
-    this.audio = new Audio('./sounds/'+note+randomNoteNum+'.mp3');
-    this.audio.play();
+    this.sounds[note + randomNoteNum].play();
+
 	}
 }
 
