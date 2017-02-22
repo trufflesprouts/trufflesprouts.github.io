@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="102px" viewBox="0 0 32 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Arrow" transform="translate(9.500000, 72.000000)" stroke="#FFFFFF" stroke-width="3">
+            <path d="M6.5,0 L6.5,26.0465116" id="Body"></path>
+            <polyline id="Head" points="0 20.8372093 6.5 27.3488372 13 20.8372093"></polyline>
+        </g>
+        <text id="scroll" transform="translate(16.000000, 28.500000) rotate(-270.000000) translate(-16.000000, -28.500000) " font-family="Futura-Medium, Futura" font-size="24" font-weight="400" fill="#FFFFFF">
+            <tspan x="-12.5" y="38">scroll</tspan>
+        </text>
+    </g>
+</svg>

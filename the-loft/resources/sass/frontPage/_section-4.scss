@@ -1,0 +1,52 @@
+#section-4 {
+  margin-top: 40px;
+
+  a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    line-height: 1.6em;
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .columns {
+    padding: 20px 40px;
+  }
+
+  @media screen and (min-width: 640px) {
+    & {
+      margin-top: 150px;
+    }
+    .columns {
+      padding: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      margin-top: 300px;
+    }
+    .columns {
+      &:nth-child(1) div {
+        float: left;
+        text-align: left;
+      }
+      &:nth-child(2) div {
+        float: center;
+        text-align: left;
+      }
+      &:nth-child(3) div {
+        float: center;
+        text-align: left;
+      }
+      &:nth-child(4) div {
+        text-align: left;
+        float: right;
+      }
+    }
+  }
+}

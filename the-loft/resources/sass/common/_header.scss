@@ -1,0 +1,149 @@
+header {
+  position: relative;
+  z-index: 4;
+
+  @import "hamburgerIcon";
+
+  /* Remove margins and padding from the list, and add a black background color */
+  ul {
+    position: absolute;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+  }
+
+  /* Float the list items side by side */
+
+  li {
+    float: left;
+  }
+
+  /* Style the links inside the list items */
+
+  li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  li a:hover {
+    color: rgba(255, 255, 255, 0.77);
+  }
+
+  .nav__logo {
+    float: left;
+    padding: 0px 25px;
+    color: black;
+    font-family: 'Helvetica Neue';
+    font-weight: 900;
+    font-size: 72px;
+    transform: translateY(-54px);
+  }
+
+  .nav__items {
+    float: right;
+    margin-right: 60px;
+  }
+
+  .nav__item {
+    margin: 35px 15px;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+  }
+
+  /* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+  li.icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nav__logo {
+      padding: 0 30px;
+      transform: translateY(0);
+    }
+
+    .nav__item {
+      margin: 10px 0 0 40px;
+    }
+
+    /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+    .topnav .nav__items {
+      display: none;
+    }
+    .topnav li.icon {
+      float: right;
+      display: inline-block;
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+    .topnav.responsive {
+      padding-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive li {
+      float: none;
+      display: inline;
+    }
+
+    .topnav.responsive li a {
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive div.nav__items {
+      margin-top: 120px;
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+
+    .topnav li {
+      float: left;
+    }
+    .nav__item {
+      clear: both;
+      float: none;
+    }
+    .nav__items {
+      float: none;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .nav__logo {
+      margin-top: 25px;
+      font-size: 35px;
+      padding: 0 0 0 20px;
+    }
+    ul.topnav li.icon  {
+      transform: scale(0.3);
+      padding-right: 0;
+    }
+    .nav__item {
+      font-size: 20px;
+    }
+    .topnav.responsive div.nav__items {
+      margin-top: 100px;
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+  }
+}

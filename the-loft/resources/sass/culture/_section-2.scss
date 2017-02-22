@@ -1,0 +1,15 @@
+.section-2 {
+  margin-top: 50px;
+
+  @media screen and (min-width: 640px) {
+    & {
+      margin-top: 100px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      margin-top: 150px;
+    }
+  }
+}

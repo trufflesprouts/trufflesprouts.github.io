@@ -1,0 +1,45 @@
+footer {
+  margin-top: 40px;
+  margin-bottom: 45px;
+
+  p {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    color: #BDBDBD;
+  }
+
+  .columns {
+    padding: 10px 40px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 640px) {
+    & {
+      margin-top: 150px;
+    }
+    .columns {
+      padding: 10px 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      margin-top: 300px;
+    }
+    .columns {
+      padding: 15px;
+      &:nth-child(1) p {
+        float: left;
+        text-align: left;
+      }
+      &:nth-child(2) p {
+        float: center;
+        text-align: center;
+      }
+      &:nth-child(3) p {
+        text-align: left;
+        float: right;
+      }
+    }
+  }
+}
