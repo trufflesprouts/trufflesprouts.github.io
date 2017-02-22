@@ -1,45 +1,101 @@
 footer {
-  margin-top: 40px;
-  margin-bottom: 45px;
+  .footer__top {
+    margin-top: 40px;
 
-  p {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    color: #BDBDBD;
-  }
-
-  .columns {
-    padding: 10px 40px;
-    text-align: center;
-  }
-
-  @media screen and (min-width: 640px) {
-    & {
-      margin-top: 150px;
+    a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      font-family: 'Helvetica Neue';
+      font-weight: 700;
+      line-height: 1.6em;
+      &:hover {
+        color: rgba(0, 0, 0, 0.7);
+      }
     }
+
     .columns {
-      padding: 10px 0;
+      padding: 20px 40px;
+    }
+
+    @media screen and (min-width: 640px) {
+      & {
+        margin-top: 150px;
+      }
+      .columns {
+        padding: 15px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      & {
+        margin-top: 300px;
+      }
+      .columns {
+        &:nth-child(1) div {
+          float: left;
+          text-align: left;
+        }
+        &:nth-child(2) div {
+          float: center;
+          text-align: left;
+        }
+        &:nth-child(3) div {
+          float: center;
+          text-align: left;
+        }
+        &:nth-child(4) div {
+          text-align: left;
+          float: right;
+        }
+      }
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    & {
-      margin-top: 300px;
+  .footer__bottom {
+    margin-top: 40px;
+    margin-bottom: 45px;
+
+    p {
+      font-family: 'Helvetica Neue';
+      font-weight: 400;
+      color: #BDBDBD;
     }
+
     .columns {
-      padding: 15px;
-      &:nth-child(1) p {
-        float: left;
-        text-align: left;
+      padding: 10px 40px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 640px) {
+      & {
+        margin-top: 150px;
       }
-      &:nth-child(2) p {
-        float: center;
-        text-align: center;
+      .columns {
+        padding: 10px 0;
       }
-      &:nth-child(3) p {
-        text-align: left;
-        float: right;
+    }
+
+    @media screen and (min-width: 1024px) {
+      & {
+        margin-top: 300px;
+      }
+      .columns {
+        padding: 15px;
+        &:nth-child(1) p {
+          float: left;
+          text-align: left;
+        }
+        &:nth-child(2) p {
+          float: center;
+          text-align: center;
+        }
+        &:nth-child(3) p {
+          text-align: left;
+          float: right;
+        }
       }
     }
   }
+
 }
