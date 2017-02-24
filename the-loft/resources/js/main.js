@@ -2,7 +2,7 @@
 
 // Hamburger Icon
 var hamburgerIcon = document.getElementById('hamburger-icon');
-hamburgerIcon.addEventListener('click', ev => {
+hamburgerIcon.addEventListener('click', function(ev) {
   if (hamburgerIcon.className === 'active') {
     hamburgerIcon.className = '';
   } else {

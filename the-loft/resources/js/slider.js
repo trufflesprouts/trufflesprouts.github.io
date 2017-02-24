@@ -7,16 +7,16 @@ var Slider = (function() {
 
   var currentSlide = 0;
 
-  leftArrow.addEventListener('click', ev => {
+  leftArrow.addEventListener('click', function(ev) {
     changeSlide("left");
   });
 
-  rightArrow.addEventListener('click', ev => {
+  rightArrow.addEventListener('click', function(ev) {
     changeSlide("right");
   });
 
   if (window.innerWidth <= 640) {
-    setInterval(() => {
+    setInterval(function() {
       changeSlide("right");
     }, 4500);
   }
