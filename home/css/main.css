@@ -1,81 +1,204 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
 
-
-* {
-  font-family: "Roboto Mono", monospace;;
-  font-size: 1em;
-  text-decoration: none;
+body {
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-#tagline {
-  position: absolute;
-  bottom: 100px;
-  right: 10%;
-  color: rgb(150, 150, 150);
+h1, h2, p, a {
+  font-family: 'Roboto';
+  color: #242221;
 }
 
-table {
-  margin: 150px auto;
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-td {
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  margin: 60px 12vw 48vw 12vw;
+}
+
+#contact {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 60vh;
+  padding-left: 12vw;
+  background-color: #182547;
+  transform: translateY(110%);
+  transition: 0.3s ease-in-out;
+}
+
+.contact__inner {
+  margin: 0;
+  width: 76vw;
+}
+
+#contact h2,#contact p {
+  color: white;
+}
+
+#contact h2 {
+  margin-top: 50px;
+}
+
+#contact svg {
+  stroke: white;
+  stroke-width: 2px;
+  float: right;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.media__container {
   position: relative;
-  text-align: center;
-  width: 250px;
-  height: 150px;
+  height: 100%;
+  margin-top: 50px;
+  transition: 1s ease-in-out
 }
 
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
-  #tagline {
-    position: absolute;
-    top: 20vh;
-    bottom: auto;
-    right: 50%;
-    transform: translateX(50%);
-    color: rgb(150, 150, 150);
-  }
-
-  table {
-    margin: 50vh auto;
-    transform: translateY(-75px);
-  }
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
-		display: block;
-    /*border: 1px solid green;*/
-	}
-
-	td {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    height: 150px;
-    overflow: hidden;
-	}
-}
-
-.link {
-  color: #0000EE;
+.media {
   position: relative;
-  z-index: 2;
+  margin: 8vw 0;
+  background-color: white;
+  width: 76vw;
+  height: 40vw;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  box-shadow: 0 10px 35px rgba(83, 83, 83, 0.03);
+  transition: 0.3s ease-in-out;
 }
 
-img {
-  z-index: 1;
-  height: 200px;
+.colored {
+  filter: grayscale(0%);
+}
+
+.media__title {
   position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: translateX(50%) translateY(50%);
+  bottom: 8%;
+  left: 8%;
+  padding: 0.5% 1.4%;
+  color: white;
+  font-weight: 300;
+  margin: 0;
 }
 
-.hidden {
+#pagination {
   display: none;
 }
 
-.hover {
-  color: white;
+
+
+
+@media screen and (min-width: 640px) {
+  .container {
+    margin: 120px 8vw;
+  }
+  header {
+    padding: 0 2vw;
+  }
+  .media__container {
+    height: 112vw;
+  }
+  .media {
+    display: inline-block;
+    float: left;
+    margin: 2vw;
+    width: 23vw;
+    height: 23vw;
+    filter: grayscale(0%);
+    box-shadow: 0 14px 35px rgba(83, 83, 83, 0.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    margin: 23vh auto 0 auto;
+    max-width: 2500px;
+    overflow: hidden;
+  }
+  header {
+    margin: 0 auto;
+    width: 944px;
+    padding: 0;
+  }
+  #contact {
+    padding-left: 0;
+  }
+  .contact__inner {
+    margin: 0 auto;
+    width: 944px;
+  }
+  .contact__inner p {
+    padding-left: 60px
+  }
+  .media__container {
+    height: 350px;
+    width: 3750px;
+    overflow: visible;
+  }
+  .media {
+    float: left;
+    margin: 20px 25px;
+    width: 285px;
+    height: 285px;
+    filter: grayscale(100%);
+  }
+  .media:hover {
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+    box-shadow: 0 24px 35px rgba(83, 83, 83, 0.08);
+  }
+  #pagination {
+    display: inline-block;;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #pagination .atom {
+    display: inline-block;
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(134, 134, 134);
+    transition: 0.3s ease-in-out;
+  }
+
+  #pagination .atom:first-child {
+    background-color: rgb(134, 134, 134);
+  }
+
+  #pagination .atom:hover {
+    transform: translateY(1px);
+  }
 }

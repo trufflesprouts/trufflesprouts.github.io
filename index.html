@@ -6,69 +6,69 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Abdullah</title>
   <meta name="description" content="Abdullah Baali's">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="./home/css/main.css">
 </head>
 
 <body>
-  <a id="tagline" href="https://github.com/trufflesprouts/">contact</a>
-  <table>
-    <tr>
-      <td>
-        <a class="hidden" href="./bullet-design"><img src="./home/img/bulletdesign.gif" alt=""></a>
-        <a class="link" id="bullet" href="./bullet-design">bullet-design</a>
-      </td>
-      <td>
-        <a class="hidden" href="https://mockstagram.surge.sh"><img src="./home/img/mockstagram.gif" alt=""></a>
-        <a class="link" id="weather" href="https://mockstagram.surge.sh">mockstagram</a>
-      </td>
-      <td>
-        <a class="hidden" href="./guitar"><img src="./home/img/guitar.gif" alt=""></a>
-        <a class="link" id="qunetin" href="./guitar">quitar</a>
-      </td>
-      <td>
-        <a class="hidden" href="https://catch-app.surge.sh"><img src="./home/img/fish.gif" alt=""></a>
-        <a class="link" id="catch" href="https://catch-app.surge.sh">seafood-market</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a class="hidden" href="./compass"><img src="./home/img/compass.gif" alt=""></a>
-        <a class="link" id="compass" href="./compass">mobile-compass</a>
-      </td>
-      <td>
-        <a class="hidden" href="./pathfinder"><img src="./home/img/pathfinder.gif" alt=""></a>
-        <a class="link" id="chuck" href="./pathfinder">pathfinder</a>
-      </td>
-      <td>
-        <a class="hidden" href="./the-loft"><img src="./home/img/the-loft.gif" alt=""></a>
-        <a class="link" id="calculator" href="./the-loft">the-loft</a>
-      </td>
-      <td>
-        <a class="hidden" href="./calculator"><img src="./home/img/calculator.gif" alt=""></a>
-        <a class="link" id="calculator" href="./calculator">calculator</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a class="hidden" href="./tictacto"><img src="./home/img/tictactoe.gif" alt=""></a>
-        <a class="link" id="tictacto" href="./tictacto">tic-tac-to</a>
-      </td>
-      <td>
-        <a class="hidden" href="pomodoro"><img src="./home/img/clock.gif" alt=""></a>
-        <a class="link" id="pmodoro" href="pomodoro">pomodoro clock</a>
-
-      </td>
-      <td>
-        <a class="hidden" href="./wiki-search"><img src="./home/img/wiki.gif" alt=""></a>
-        <a class="link" id="wiki" href="./wiki-search">wikipedia-search</a>
-      </td>
-      <td>
-        <a class="hidden" href="https://store-app.surge.sh"><img src="./home/img/store.gif" alt=""></a>
-        <a class="link" id="store" href="https://store-app.surge.sh">react-store</a>
-      </td>
-    </tr>
-  </table>
+  <div class="container">
+    <header>
+      <h1>Hi, I’m Abdullah</h1>
+      <p><i>Below are some of my works and experiments, If you’d like to contact me you can <span onclick="revealContact()">click here</span>.</i></p>
+    </header>
+      <div id="contact">
+        <div class="contact__inner">
+          <svg onclick="hideContact()">
+            <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+          </svg>
+          <h2>contact</h2>
+          <p>
+            abdullah baali <br>
+            milkyabdullah@gmail.com <br>
+            +966 50 702 0839 <br>
+            github trufflesprouts <br>
+            yanbu, sa
+          </p>
+        </div>
+      </div>
+    <div id="slider" class="media__container">
+      <a href="./bullet-design"><div class="media" style="background: url('./home/img/bullet.jpg');">
+        <p class="media__title">Bullet Design</p>
+      </div></a>
+      <a href="https://mockstagram.surge.sh/"><div class="media" style="background-image: url('./home/img/mockstagram.jpg');">
+        <p class="media__title">Mockstagram</p>
+      </div></a>
+      <a href="./the-loft"><div class="media" style="background-image: url('./home/img/the-loft.gif');">
+        <p class="media__title">The Loft</p>
+      </div></a>
+      <a href="https://catch-app.surge.sh/"><div class="media" style="background-image: url('./home/img/fish.jpg');">
+        <p class="media__title">Seafood Market</p>
+      </div></a>
+      <a href="./guitar"><div class="media" style="background-image: url('./home/img/guitar.jpg');">
+        <p class="media__title">Guitar</p>
+      </div></a>
+      <a href="./pathfinder"><div class="media" style="background-image: url('./home/img/pathfinder.jpg');">
+        <p class="media__title">Pathfinder</p>
+      </div></a>
+      <a href="./tictacto"><div class="media" style="background-image: url('./home/img/tic-tac.png');">
+        <p class="media__title">tic-tac-to</p>
+      </div></a>
+      <a href="./compass"><div class="media" style="background-image: url('./home/img/compass.png');">
+        <p class="media__title">Mobile Compass</p>
+      </div></a>
+      <a href="./wiki-search"><div class="media" style="background-image: url('./home/img/wiki.jpg');">
+        <p class="media__title">Wikipedia Search</p>
+      </div></a>
+      <a href="./calculator"><div class="media" style="background-image: url('./home/img/calculator.png');">
+        <p class="media__title">Calculator</p>
+      </div></a>
+      <a href="./pomodoro"><div class="media" style="background-image: url('./home/img/clock.jpg');">
+        <p class="media__title">Pomodoro Clock</p>
+      </div></a>
+    </div>
+    <div id="pagination">
+    </div>
+  </div>
 
   <script src="./home/js/main.js"></script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

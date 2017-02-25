@@ -1,59 +1,123 @@
-var anchors = Array.from(document.getElementsByClassName('link'));
-var anchorPositions = [];
+var contactEl = document.getElementById('contact');
 
-// Hover event listeners
-for (var i = 0; i < anchors.length; i++) {
-  (function (index) {
-    anchors[index].addEventListener('mouseenter', function() {
-      var element = anchors[index];
-      var element_splash = element.previousElementSibling;
-      element.className = "link hover";
-      element_splash.className = "";
-    });
-    anchors[index].addEventListener('mouseleave', function() {
-      anchors[index].className = "link";
-      anchors[index].previousElementSibling.className = "hidden";
-    });
-    anchorPositions.push(offsetTop(anchors[index]));
-  })(i);
+function revealContact() {
+  contactEl.style.display = "block";
+  setTimeout(function() {
+    contactEl.style.transform = "translateY(0)";
+  }, 10);
 }
 
-window.onresize = function(event) {
-  anchorPositions = [];
+function hideContact() {
+  contactEl.style.transform = "translateY(100%)";
+  setTimeout(function() {
+    contactEl.style.display = "none";
+  }, 300);
+}
+
+var Pagination = (function () {
+  var sliderEl = document.getElementById('slider');
+  var paginationEl = document.getElementById('pagination');
+
+  addPagination();
+
+  window.addEventListener('resize', function(ev) {
+    if (window.innerWidth > 640) {
+      addPagination();
+    }
+  });
+
+  function addPagination() {
+    var containerWidth = Array.from(document.getElementsByClassName('container'))[0].offsetWidth;
+    var mediaEl = Array.from(document.getElementsByClassName('media'))[0];
+    var mediaWidth = getElementWidth(mediaEl);
+    var mediaDisplayed = Math.floor(containerWidth/mediaWidth);
+    var pagesNum = Math.floor(11/mediaDisplayed) + 1;
+    paginationEl.innerHTML = '';
+    for (var i = 0; i < pagesNum; i++) {
+      paginationEl.innerHTML += '<div data-index='+i+' class="atom"></div>';
+    }
+    var atoms = Array.from(document.getElementsByClassName('atom'));
+    for (var i = 0; i < atoms.length; i++) {
+      (function (index) {
+        atoms[index].addEventListener('click', function(ev) {
+          var siblings = getSiblings(atoms[index]);
+          for (var i = 0; i < siblings.length; i++) {
+            siblings[i].style.backgroundColor = "transparent";
+          }
+          atoms[index].style.backgroundColor = "rgb(134, 134, 134)";
+          console.log(mediaWidth);
+          console.log(mediaDisplayed);
+          var transX = - (atoms[index].dataset.index) * (mediaWidth*mediaDisplayed);
+          sliderEl.style.transform = "translateX("+transX+"px)";
+        });
+      })(i);
+    }
+  }
+
+  function getElementWidth(element) {
+    var style = element.currentStyle || window.getComputedStyle(element),
+        width = element.offsetWidth,
+        margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+    return width + margin;
+  }
+
+  function getSiblings(elem) {
+    var siblings = [];
+    var sibling = elem.parentNode.firstChild;
+    var skipMe = elem;
+    for ( ; sibling; sibling = sibling.nextSibling )
+    if ( sibling.nodeType == 1 && sibling != elem )
+    siblings.push( sibling );
+    return siblings;
+  }
+})();
+
+var ScrollHighlight = (function () {
+  var anchors = Array.from(document.getElementsByClassName('media'));
+  var anchorPositions = [];
+
   for (var i = 0; i < anchors.length; i++) {
     anchorPositions.push(offsetTop(anchors[i]));
   }
-};
 
-// Highlight section
-if (window.innerWidth < 760) {
-  highlightSection();
-}
+  window.onresize = function(event) {
+    anchorPositions = [];
+    for (var i = 0; i < anchors.length; i++) {
+      anchorPositions.push(offsetTop(anchors[i]));
+    }
+  };
 
-// Scroll
-window.onscroll = function(){
-  highlightSection();
-}
+  // Highlight section
+  if (window.innerWidth < 760) {
+    highlightSection();
+  }
 
-function highlightSection() {
-  var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
-  var midScreen = window.innerHeight/2 - 75;
-  var sectionOnCenter = 1;
-  for (var i = 0; i < anchorPositions.length; i++) {
-    if (scrollBarPosition + midScreen <= anchorPositions[i]) {
-      for (var k = 0; k < anchors.length; k++) {
-        anchors[k].className = "link";
-        anchors[k].previousElementSibling.className = "hidden";
-      };
-      anchors[i].className = "link hover";
-      anchors[i].previousElementSibling.className = "";
-      break;
+  // Scroll
+  window.onscroll = function(){
+    if (window.innerWidth < 760) {
+      highlightSection();
     }
   }
-}
 
-function offsetTop(el) {
-    var rect = el.getBoundingClientRect(),
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return rect.top + scrollTop;
-}
+  function highlightSection() {
+    var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+    var midScreen = window.innerHeight/2 - 75;
+    var sectionOnCenter = 1;
+    for (var i = 0; i < anchorPositions.length; i++) {
+      if ((scrollBarPosition + (midScreen*0.7))  <= anchorPositions[i]) {
+        for (var k = 0; k < anchors.length; k++) {
+          anchors[k].className = "media";
+        };
+        anchors[i].className = "media colored";
+        break;
+      }
+    }
+  }
+
+  function offsetTop(el) {
+      var rect = el.getBoundingClientRect(),
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return rect.top + scrollTop;
+  }
+
+})();
