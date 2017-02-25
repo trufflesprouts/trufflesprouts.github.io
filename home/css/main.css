@@ -168,7 +168,7 @@ span {
     margin: 20px 25px;
     width: 285px;
     height: 285px;
-    filter: grayscale(100%);
+    /*filter: grayscale(100%);*/
   }
   .media:hover {
     filter: grayscale(0%);
