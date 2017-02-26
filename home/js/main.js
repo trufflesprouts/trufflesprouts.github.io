@@ -1,3 +1,14 @@
+function debounce(fn, delay) {
+  var timer = null;
+  return function () {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      fn.apply(context, args);
+    }, delay);
+  };
+}
+
 var contactEl = document.getElementById('contact');
 
 function revealContact() {
@@ -45,8 +56,6 @@ var Pagination = (function () {
             siblings[i].style.backgroundColor = "transparent";
           }
           atoms[index].style.backgroundColor = "rgb(134, 134, 134)";
-          console.log(mediaWidth);
-          console.log(mediaDisplayed);
           var transX = - (atoms[index].dataset.index) * (mediaWidth*mediaDisplayed);
           sliderEl.style.transform = "translateX("+transX+"px)";
         });
@@ -95,9 +104,11 @@ var ScrollHighlight = (function () {
   // Scroll
   window.onscroll = function(){
     if (window.innerWidth < 760) {
-      highlightSection();
+      debouncedhighlightSection();
     }
   }
+
+  var debouncedhighlightSection = debounce(highlightSection, 100);
 
   function highlightSection() {
     var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
