@@ -139,7 +139,7 @@ span {
     overflow: hidden;
   }
   .container {
-    margin: 23vh auto 0 auto;
+    margin: 23vh auto 23vh auto;
     max-width: 2500px;
     overflow: hidden;
   }
