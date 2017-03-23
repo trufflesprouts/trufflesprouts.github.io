@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700");
+
 /**
  * Reset some basic elements
  */
@@ -91,16 +94,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $text-color;
   }
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -129,10 +132,9 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  // border: 1px solid $grey-color-light;
+  // border-radius: 3px;
+  background-color: #f0f0f0;
 }
 
 code {
@@ -156,19 +158,23 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
+  padding: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+@media screen and (min-width: $medium-screen) {
+  body {
+    font-size: $big-font-size;
+  }
+  .wrapper {
+    padding: 60px 45px;
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .wrapper {
+    padding: 85px 45px;
   }
 }
 

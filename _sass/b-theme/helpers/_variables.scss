@@ -1,0 +1,28 @@
+// Define defaults for each variable.
+
+$base-font-family: "Roboto Mono", "Source Code Pro", monospace !default;
+$base-font-size:   18px !default;
+$base-font-weight: 300 !default;
+$big-font-size:  $base-font-size * 1.1 !default;
+$small-font-size:  $base-font-size * 0.9 !default;
+$base-line-height: 1 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #000 !default;
+$background-color: #fff !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$blue-color: #007DFF !default;
+$orange-color: #FFB000 !default;
+$green-color: #00FF37 !default;
+$maginta-color: #FF00C0 !default;
+
+// Width of the content area
+// $content-width:    800px !default;
+$medium-screen: 400px !default;
+$large-screen: 800px !default;

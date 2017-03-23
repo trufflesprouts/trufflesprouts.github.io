@@ -1,0 +1,32 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 80%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rainbowFlash {
+  0% {
+    color: $maginta-color
+  }
+  20% {
+    color: $blue-color
+  }
+  40% {
+    color: $orange-color
+  }
+  60% {
+    color: $green-color
+  }
+  80% {
+    color: $maginta-color
+  }
+  100% {
+    color: $orange-color
+  }
+}
