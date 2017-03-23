@@ -24,6 +24,7 @@ github_username:  trufflesprouts
 
 # Build settings
 markdown: kramdown
+excerpt_separator: "<!--more-->"
 # theme: minima
 gems:
   - jekyll-feed
