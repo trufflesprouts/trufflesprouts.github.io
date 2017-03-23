@@ -3,18 +3,18 @@
  */
 footer {
   display: block;
-  margin-top: 75px;
+  margin-top: 55px;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 
   @media screen and (min-width: $medium-screen) {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 60px;
   }
 
   @media screen and (min-width: $large-screen) {
-    margin-top: 170px;
+    margin-top: 85px;
     margin-bottom: 85px;
   }
 }

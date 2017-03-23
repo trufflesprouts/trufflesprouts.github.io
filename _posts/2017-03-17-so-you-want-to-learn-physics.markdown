@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "So You Want To Learn Physics..."
-excerpt: Over the past few years, ever since writing “If Susan Can Learn Physics, So Can You”, I’ve been contacted by people from all backgrounds who are inspired and want to learn physics, but don’t know where to start, what to learn, what to read, and how to structure their studies…this post is a condensed version of what I’ve sent to people who have contacted me over the years, outlining what everyone needs to learn in order to really understand physics. 
+excerpt: Over the past few years, ever since writing “If Susan Can Learn Physics, So Can You”, I’ve been contacted by people from all backgrounds who are inspired and want to learn physics, but don’t know where to start, what to learn, what to read, and how to structure their studies…this post is a condensed version of what I’ve sent to people who have contacted me over the years, outlining what everyone needs to learn in order to really understand physics.
 ---
 
-## Introduction
+### Introduction
 
 Over the past few years, ever since writing "If Susan Can Learn Physics, So Can You", I've been contacted by people from all backgrounds who are inspired and want to learn physics, but don't know where to start, what to learn, what to read, and how to structure their studies. I've spoken with single mothers who want to go back to school and study physics, tenured philosophy professors who want to learn physics so that they can make significant and informed contributions to philosophy of physics, high school students who want to know what they should read to prepare for an undergraduate education in physics, and people in dozens of various careers who want to really, really learn and understand physics simply for the joy of it.
 
@@ -28,7 +28,7 @@ Please comment with your experiences and with any suggestions you have for impro
 <br />
 <br />
 
-## Before You Begin
+### Before You Begin
 
 Popular Books on Physics (The Good Ones)
 When you're solving problems, working through textbooks, getting into the nitty-gritty details of each topic, it's so easy to lose the forest for the trees and forget why you even became inspired to study physics in the first place. This is where really, really good (and non-speculative) books on physics come in handy: they inspire, they encourage, and they help you understand the big picture.

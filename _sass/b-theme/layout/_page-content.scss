@@ -2,28 +2,57 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  animation: fadeInUp 0.6s ease-in-out both;
 }
 
 .page-heading {
   font-size: 20px;
 }
 
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
 .post-meta {
-  font-size: $small-font-size;
+  margin-top: 10px;
+  font-size: $font-size-0;
   color: $grey-color;
+  font-style: italic;
 }
 
-.post-link {
-  display: block;
-  font-size: 24px;
+.post-list {
+  a {
+    color: $blue-color;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip: ink;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      text-decoration-color: lighten($blue-color, 20%);
+    }
+  }
+
+  li {
+    margin-bottom: 65px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    li {
+      margin-bottom: 90px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    li {
+      margin-bottom: 120px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
