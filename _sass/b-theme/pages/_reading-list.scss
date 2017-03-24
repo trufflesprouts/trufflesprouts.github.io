@@ -1,0 +1,53 @@
+.reading-list {
+  .book-author {
+    opacity: 0.4;
+  }
+
+  h1 {
+    color: $orange-color;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    margin-bottom: 25px;
+    &:not(:first-child) {
+      margin-top: 65px;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    & {
+      max-width: 700px;
+      margin: 0 auto;
+      // margin-bottom: 100px;
+      // padding-left: 80px;
+    }
+
+    .w-30 {
+      width: 15%;
+    }
+    .w-40 {
+      width: 25%;
+    }
+    .w-70 {
+      width: 85%;
+    }
+    .w-60 {
+      width: 75%;
+    }
+
+    h1 {
+      margin: 0 !important;
+      display: inline-block;
+      transform: rotate(90deg) translate(0, -100%);
+      float: left;
+      transform-origin: 0 0;
+    }
+    .split {
+      display: block;
+      clear: both;
+      height: 70px;
+    }
+    .book-list {
+      display: inline-block;
+    }
+  }
+}

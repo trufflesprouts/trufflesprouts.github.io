@@ -1,0 +1,55 @@
+.text-area {
+  h1, h2, h3, h4, h5, h6,
+  p, a, blockquote, pre,
+  ul, ol, dl, figure {
+    max-width: $content-width;
+    font-family: "Lato", "Neue Helvetica W01", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: $base-line-height * 1.5;
+    margin: 1em auto;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+  }
+
+  img {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+
+  ul, ol {
+    padding-left: 1em;
+  }
+
+  li {
+    font-family: "Lato", "Neue Helvetica W01", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: $base-line-height * 1.5;
+  }
+
+  li {
+    margin: 1em 0;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    img {
+      width: 100%;
+      margin: 20px 0;
+    }
+    ul, ol {
+      padding-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    img {
+      margin: 35px 0;
+      cursor: zoom-in;
+      transition: 0.5s ease-in-out;
+      &.clicked {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

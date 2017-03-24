@@ -2,6 +2,15 @@
 layout: post
 title:  "So You Want To Learn Physics..."
 excerpt: Over the past few years, ever since writing “If Susan Can Learn Physics, So Can You”, I’ve been contacted by people from all backgrounds who are inspired and want to learn physics, but don’t know where to start, what to learn, what to read, and how to structure their studies…this post is a condensed version of what I’ve sent to people who have contacted me over the years, outlining what everyone needs to learn in order to really understand physics.
+style: "
+body {
+  background-color: black;
+}
+*,a {
+  color: white;
+}
+"
+
 ---
 
 ### Introduction

@@ -2,11 +2,15 @@
  * Site footer
  */
 footer {
+  font-size: $font-size-0;
+  opacity: 0.5;
   display: block;
   margin-top: 55px;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
+
+  clear: both;
 
   @media screen and (min-width: $medium-screen) {
     margin-top: 80px;

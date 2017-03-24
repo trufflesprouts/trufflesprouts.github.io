@@ -40,24 +40,6 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * Images
- */
-
-
-
-
-/**
- * Figures
- */
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
-}
-
 
 /**
  * Type
@@ -99,11 +81,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: $text-color;
+    // color: $text-color;
   }
 
   &:hover {
-    color: $text-color;
+    // color: $text-color;
     text-decoration: none;
   }
 }

@@ -1,0 +1,70 @@
+.about-page {
+  // .text {
+    h1,a {
+      color: $green-color;
+    }
+  // }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20% 5% white;
+  }
+
+  .image-container {
+    position: relative;
+    margin-top: 50px;
+    height:0;
+    width:100%;
+    padding-bottom:100%;
+    background-image: url("/assets/img/personal-img.jpg");
+    background-size: cover;
+    background-position: right;
+    .border {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: inset 0 0 0 10px $green-color;
+      height:0;
+      width:95%;
+      padding-bottom:95%;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    h1, .text-area {
+      float: left;
+      width: 50%;
+    }
+    .text-area {
+      margin-bottom: 170px;
+    }
+    img {
+      float: right;
+      width: 50%;
+      // transform: translateY(-20%);
+    }
+    .image-container {
+      margin: 0 0 170px 0;
+      float: right;
+      width: 40%;
+      padding-bottom:40%;
+    }
+  }
+
+  @media screen and (min-width: $large-screen+200) {
+    img {
+      transform: translateY(-10%);
+    }
+  }
+
+
+  @media screen and (min-width: $large-screen+360) {
+    img {
+      transform: translateY(-20%);
+    }
+  }
+}
