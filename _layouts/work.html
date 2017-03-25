@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <main class="page-content" aria-label="Content">
+      <div class="work-page">
+        <div class="devices-container">
+          <div class="centerdevices col-12">
+            <div class="iphoneipad">
+              <div class="iphone">
+                <div class="mask">
+                  <video class="mask-img" src="/assets/video/iphone.mp4" poster="/assets/img/iphone.jpg" autoplay loop></video>
+                  <!-- <img class="mask-img" src="/assets/img/compass.jpg"> -->
+                </div>
+              </div>
+              <div class="ipad">
+                <div class="mask">
+                  <video class="mask-img" src="/assets/video/ipad.mp4" poster="/assets/img/ipad.jpg" autoplay loop></video>
+                  <!-- <img class="mask-img" src="/assets/img/webapp.svg"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="media__container">
+            <a href="http://truffles-the-loft.surge.sh/"class="media" style="background-image: url('/assets/img/work/the-loft.gif');">
+              <span class="media__title">The Loft</span>
+            </a>
+            <a href="https://mockstagram.surge.sh/"class="media" style="background-image: url('/assets/img/work/mockstagram.jpg');">
+              <span class="media__title">Mockstagram</span>
+            </a>
+            <a href="https://catch-app.surge.sh/"class="media" style="background-image: url('/assets/img/work/seafood.jpg');">
+              <span class="media__title">Seafood Market</span>
+            </a>
+            <a href="http://truffles-pathfinder.surge.sh/"class="media" style="background-image: url('/assets/img/work/pathfinder.jpg');">
+              <span class="media__title">Pathfinder</span>
+            </a>
+            <a href="http://truffles-bullet-design.surge.sh/"class="media" style="background: url('/assets/img/work/bullet.jpg');">
+              <span class="media__title">Bullet Design</span>
+            </a>
+            <a href="http://truffles-pomodoro.surge.sh/"class="media" style="background-image: url('/assets/img/work/clock.jpg');">
+              <span class="media__title">Pomodoro Clock</span>
+            </a>
+            <a href="http://truffles-wiki-search.surge.sh/"class="media" style="background-image: url('/assets/img/work/wiki.jpg');">
+              <span class="media__title">Wikipedia Search</span>
+            </a>
+            <a href="http://truffles-tictacto.surge.sh/"class="media" style="background-image: url('/assets/img/work/tic-tac.png');">
+              <span class="media__title">tic-tac-to</span>
+            </a>
+            <a href="http://truffles-calculator.surge.sh/"class="media" style="background-image: url('/assets/img/work/calculator.png');">
+              <span class="media__title">Calculator</span>
+            </a>
+            <a href="http://truffles-compass.surge.sh/"class="media" style="background-image: url('/assets/img/work/compass.png');">
+              <span class="media__title">Mobile Compass</span>
+            </a>
+            <a href="http://truffles-guitar.surge.sh/"class="media" style="background-image: url('/assets/img/work/guitar.gif');">
+              <span class="media__title">Guitar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

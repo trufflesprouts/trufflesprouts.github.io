@@ -1,6 +1,8 @@
 // Define defaults for each variable.
 
-$base-font-family: "Roboto Mono", "Source Code Pro", monospace !default;
+$monospace-font: "Roboto Mono", "Source Code Pro", monospace !default;
+$sans-serif-font: "Lato", "Neue Helvetica W01", "Helvetica Neue", Helvetica, sans-serif;
+
 $base-font-weight: 300 !default;
 $base-font-size:   18px !default;
 

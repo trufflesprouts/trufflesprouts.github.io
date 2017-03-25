@@ -1,9 +1,9 @@
 .text-area {
   h1, h2, h3, h4, h5, h6,
   p, a, blockquote, pre,
-  ul, ol, dl, figure {
+  ul, li, ol, dl, figure {
     max-width: $content-width;
-    font-family: "Lato", "Neue Helvetica W01", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: $sans-serif-font;
     line-height: $base-line-height * 1.5;
     margin: 1em auto;
   }
@@ -21,11 +21,6 @@
 
   ul, ol {
     padding-left: 1em;
-  }
-
-  li {
-    font-family: "Lato", "Neue Helvetica W01", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: $base-line-height * 1.5;
   }
 
   li {

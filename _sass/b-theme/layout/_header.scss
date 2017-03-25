@@ -28,7 +28,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     top: 0;
     left: 0;
