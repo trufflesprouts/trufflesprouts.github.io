@@ -1,11 +1,4 @@
-
-// document.getElementsByTagName('video')[0].onended = function () {
-//   this.load();
-//   this.play();
-// };
-
 // Hamburger Icon
-
 var hamburgerIcon = document.getElementById('hamburger-icon');
 
 hamburgerIcon.addEventListener('click', function(ev) {
@@ -18,7 +11,6 @@ hamburgerIcon.addEventListener('click', function(ev) {
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-
 var nav = document.getElementById("headerNav");
 
 function hamburgerFunction() {
