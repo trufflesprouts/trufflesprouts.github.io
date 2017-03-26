@@ -41,7 +41,7 @@
     img {
       margin: 35px 0;
       cursor: zoom-in;
-      transition: 0.5s ease-in-out;
+      transition: .4s cubic-bezier(.4,0,.2,1);
       &.clicked {
         transform: scale(1.15);
       }

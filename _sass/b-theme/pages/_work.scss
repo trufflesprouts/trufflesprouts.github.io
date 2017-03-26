@@ -38,7 +38,7 @@
       margin-bottom: 8%;
       background-size: cover;
       background-position: center;
-      transition: 0.5s ease-in-out;
+      transition: .25s cubic-bezier(.4,0,.2,1);
       &:hover {
         transform: scale(1.03);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
