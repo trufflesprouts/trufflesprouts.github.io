@@ -28,4 +28,4 @@ You can contact me on the [twitters], email me at [milkyabdullah@gmail.com], che
 [twitters]: https://twitter.com/trufflesprouts
 [milkyabdullah@gmail.com]: mailto:milkyabdullah@gmail.com
 [my CV]: /assets/pdf/Abdullah-Baali-CV.pdf
-[Amazon]: http://a.co/iBcokDx
+[Amazon]: http://a.co/9FY7D5q
