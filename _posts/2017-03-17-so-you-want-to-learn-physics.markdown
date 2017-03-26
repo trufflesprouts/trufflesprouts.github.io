@@ -6,7 +6,7 @@ style: "
 body {
   background-color: black;
 }
-*,a {
+*,a, input {
   color: white;
 }
 "

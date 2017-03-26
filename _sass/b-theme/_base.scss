@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
+body,input {
   font: $base-font-weight #{$font-size-1}/#{$base-line-height} $monospace-font;
   color: $text-color;
   background-color: $background-color;

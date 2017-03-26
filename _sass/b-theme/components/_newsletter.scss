@@ -1,0 +1,57 @@
+$signup-heigth: 50px;
+
+#mc_embed_signup {
+  position: relative;
+  height: 2* $signup-heigth;
+  max-width: $content-width;
+  margin: 100px auto;
+  input {
+    padding: 10px;
+  }
+  input.email {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border: 2px solid $maginta-color;
+    height: $signup-heigth;
+    text-align: center;
+    background: transparent;
+  }
+  div.clear {
+    float: left;
+    width: 100%;
+    margin: 0;
+    height: $signup-heigth;
+  }
+  input.button {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border: 2px solid $maginta-color;
+    border-top: 0;
+    &:hover {
+      background-color: $maginta-color;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  @media screen and (min-width: $medium-screen) {
+    & {
+      height: $signup-heigth;
+    }
+    input.email {
+      width: 70%;
+    }
+    div.clear {
+      width: 30%;
+    }
+    input.button {
+      border-top: 2px solid $maginta-color;
+      border-left: 0;
+    }
+  }
+}
