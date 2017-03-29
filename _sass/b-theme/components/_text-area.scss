@@ -18,6 +18,12 @@
     margin: 15px 0;
   }
 
+  .post-image-big {
+    max-width: 1200px;
+  }
+  .post-image-small {
+    max-width: $content-width/2;
+  }
 
   ul, ol {
     padding-left: 1em;
@@ -43,8 +49,14 @@
       cursor: zoom-in;
       transition: .4s cubic-bezier(.4,0,.2,1);
       &.clicked {
-        transform: scale(1.15);
+        transform: scale(1.8);
       }
+    }
+    .post-image-big img.clicked {
+      transform: scale(1.15);
+    }
+    .post-image-small img.clicked {
+      transform: scale(2.8);
     }
   }
 }

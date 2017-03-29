@@ -26,7 +26,6 @@ var pElms = Array.from(document.getElementsByTagName('p'));
 for (var i = 0; i < pElms.length; i++) {
   if (pElms[i].firstChild) {
     if (pElms[i].firstChild.tagName == "IMG") {
-      pElms[i].style.maxWidth = "1200px";
       (function(index) {
         pElms[index].firstChild.addEventListener('click', function() {
           if (pElms[index].firstChild.className == "clicked") {

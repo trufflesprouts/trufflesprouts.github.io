@@ -27,15 +27,9 @@ Remember that anyone can learn physics. It's no different from learning programm
 
 Please comment with your experiences and with any suggestions you have for improving this list!
 
-<br />
-<br />
-<br />
 
 ---
 
-<br />
-<br />
-<br />
 
 ### Before You Begin
 
