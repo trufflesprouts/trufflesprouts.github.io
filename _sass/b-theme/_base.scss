@@ -16,10 +16,9 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body,input {
+body,input,code {
   font: $base-font-weight #{$font-size-1}/#{$base-line-height} $monospace-font;
   color: $text-color;
-  background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -28,6 +27,9 @@ body,input {
   font-kerning: normal;
 }
 
+body {
+  background-color: $background-color;
+}
 
 
 /**
@@ -114,11 +116,8 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  // border: 1px solid $grey-color-light;
-  // border-radius: 3px;
-  background-color: #f0f0f0;
+pre {
+  box-sizing: border-box;
 }
 
 code {
@@ -126,7 +125,7 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 15px 20px;
   overflow-x: auto;
 
   > code {
