@@ -39,6 +39,12 @@
       background-size: cover;
       background-position: center;
       transition: .25s cubic-bezier(.4,0,.2,1);
+      span {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        color: white;
+      }
       &:hover {
         transform: scale(1.03);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
@@ -50,12 +56,9 @@
         width: 100%;
         padding-bottom: 46%;
         margin-bottom: 85px;
-      }
-      span {
-        position: absolute;
-        left: 5%;
-        bottom: 5%;
-        color: white;
+        span {
+          left: 2.5%;
+        }
       }
     }
   }
