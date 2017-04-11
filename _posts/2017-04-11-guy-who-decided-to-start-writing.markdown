@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Guy Who Decided to Start writing"
+title:  "Guy Who Decided to Start Writing"
 ---
 
 I never really wanted to start a blog - maybe a little - but after writing all my university application essays I missed writing. I'm in no way a good writer, I rarely wrote in English before, besides random internet comments, and most times I just copy someone else's and modify it a bit. So, I'm committing myself to writing at least one post a month, and hopefully, improve my writing and understanding of the subject matter at the same time.
