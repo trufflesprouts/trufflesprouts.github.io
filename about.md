@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /about/
+head: '<meta name="theme-color" content="#000">'
 style: "
 body {
   background-color: black;
