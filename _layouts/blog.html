@@ -15,7 +15,7 @@ layout: default
          <p>{{ post.excerpt }}</p>
         {% endif %}
       </div>
-      <p class="post-meta">→ {{ post.date | date: "%b %-d, %Y" }}</p>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
     </li>
   {% endfor %}
 
