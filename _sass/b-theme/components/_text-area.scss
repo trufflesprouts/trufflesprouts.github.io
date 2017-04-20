@@ -1,7 +1,7 @@
 .text-area {
   h1, h2, h3, h4, h5, h6,
   p, a, blockquote, pre,
-  ul, li, ol, dl, figure {
+  ul, ol, dl, div, figure {
     max-width: $content-width;
     font-family: $sans-serif-font;
     line-height: $base-line-height * 1.5;
@@ -26,11 +26,7 @@
   }
 
   ul, ol {
-    padding-left: 1em;
-  }
-
-  li {
-    margin: 1em 0;
+    padding-left: 2em;
   }
 
   .video-media {
@@ -51,12 +47,12 @@
       width: 100%;
       margin: 20px 0;
     }
-    ul, ol {
-      padding-left: 50px;
-    }
   }
 
   @media screen and (min-width: $large-screen) {
+    ul, ol {
+      padding-left: 4em;
+    }
     img, .video-media {
       margin: 35px 0;
     }
