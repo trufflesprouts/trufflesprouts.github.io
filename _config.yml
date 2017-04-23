@@ -28,8 +28,9 @@ excerpt_separator: "<!--more-->"
 # theme: minima
 gems:
   - jekyll-feed
-  - jekyll-minifier
   - jekyll-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  style: compressed
