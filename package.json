@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Personal Site",
   "scripts": {
-    "start": "bundle exec jekyll serve"
+    "start": "jekyll build",
+    "poststart": "sw-precache --root=_site --config=sw-config.js"
   },
   "repository": {
     "type": "git",
