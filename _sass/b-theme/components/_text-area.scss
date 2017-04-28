@@ -1,7 +1,7 @@
 .text-area {
   h1, h2, h3, h4, h5, h6,
   p, a, blockquote, pre,
-  ul, ol, dl, div, figure {
+  ul, ol, dl, .highlighter-rouge, figure {
     max-width: $content-width;
     font-family: $sans-serif-font;
     line-height: $base-line-height * 1.5;
