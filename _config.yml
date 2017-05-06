@@ -32,5 +32,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
 sass:
   style: compressed
