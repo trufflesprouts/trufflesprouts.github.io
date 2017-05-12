@@ -21,6 +21,8 @@
   {% endif %}
 
   {% if jekyll.environment == "production" %}
-    {% include mixpanel.html %}
+    {% include heap-production.html %}
+  {% else %}
+    {% include heap-development.html %}
   {% endif %}
 </head>
