@@ -31,6 +31,11 @@ body {
   background-color: $background-color;
 }
 
+body.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
