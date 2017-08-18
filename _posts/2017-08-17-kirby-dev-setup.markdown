@@ -13,7 +13,7 @@ body, header .nav {
 "
 ---
 
-If you already know that Kirby is, [click](#setup) here to skip the introduction.
+If you already know what Kirby is, [click](#setup) here to skip the introduction.
 
 If you plan on building websites for clients, chances are they will ask for a way to add/administer content, i.e., a content management system. Problem is, most CMSs are just plain terrible for either the developer or the client, most times they give clients either too much freedom to screwup everything (Wordpress), or they don't give enough (Siteleaf, Cloudcannon).
 
