@@ -20,9 +20,9 @@ header .nav {
 "
 ---
 
-I am a self-taught programmer. I love all things computer science, math, physics, cosmology, and art. That’s a lot, I know.
+I am a self-taught programmer and I love making things for the web. I currently work with Lime developing a new publishing platform, I do lots of things including full stack development, testing, and UI/UX design.
 
-Right now I work as a full-stack Javascript developer. I enjoy working on tough problems, that’s why I’m focusing on machine learning and AI in general. I hate most dev tools and consider them to be a necessary evil.
+On the side, I enjoy working on tough problems, that’s why I’m focusing on machine learning and AI. I hate most dev tools and consider them to be a necessary evil.
 
 You can contact me on the [twitters], email me at [milkyabdullah@gmail.com], check out [my CV], buy me a gift from [Amazon] or find me trufflesprouts on GitHub. thank you for reading, pls like & subscribe!
 
