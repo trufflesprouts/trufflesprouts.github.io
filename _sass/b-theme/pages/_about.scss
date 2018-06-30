@@ -1,4 +1,6 @@
 .about-page {
+  max-width: 600px;
+
   *::selection {
     background: #afafaf;
   }
@@ -42,10 +44,6 @@
   }
 
   @media screen and (min-width: $large-screen) {
-    h1,
-    .text-area {
-      width: 50%;
-    }
     .text-area {
       margin-bottom: 170px;
     }
